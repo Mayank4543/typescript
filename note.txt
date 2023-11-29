@@ -1,0 +1,2 @@
+typescript is a superset of javascript that adds static typing other featture to enhance javascript developing It was develope by microsft on oct 1 ,2012 and is now an open source project with a large community of contributors
+easier to read and understand
