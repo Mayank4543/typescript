@@ -4,4 +4,7 @@ any use when dealing with data from dynamic sources like user
  inputs ,network resources or deserialized  JSON OBJECT then type will be used
  unknown type is a safer alternative to any because it still enforces type checking and type  saftey
  map mthod creates a new array by applying a providede the function to the to each element of the orginal array  it transform each element snd return a new array with the transformed values
- type alias is a waynto give a name to specific type or combination of types it allow you to create a custom name for a type  ,makeing it easier to reuse  and refer  to the same type in different  parts of your code  ty  
+ type alias is a waynto give a name to specific type or combination of types it allow you to create a custom name for a type  ,makeing it easier to reuse  and refer  to the same type in different  parts of your code  ty 
+ ************
+ The function call sinature  refer to the declaration or definition of a function ,which include the function name , paramenter and return type it define the structure  and type  information of a function  without including  the implementation body 
+ 
