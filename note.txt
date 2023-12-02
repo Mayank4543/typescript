@@ -7,4 +7,7 @@ any use when dealing with data from dynamic sources like user
  type alias is a waynto give a name to specific type or combination of types it allow you to create a custom name for a type  ,makeing it easier to reuse  and refer  to the same type in different  parts of your code  ty 
  ************
  The function call sinature  refer to the declaration or definition of a function ,which include the function name , paramenter and return type it define the structure  and type  information of a function  without including  the implementation body 
- 
+**
+Generic in typescript allow you to create reusable components or function that can work with multiple data types
+****
+interface   it allow you to define a contract for an object'shape  
