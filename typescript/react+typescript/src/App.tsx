@@ -1,11 +1,13 @@
+import { useState } from "react";
 import Todo from "./component/todo";
+import { Todos } from "./model";
 
-let name: string;
-let age: number;
-let isstudent: boolean;
-let hobbies: string[];
-let role: [number, string];
-role = [1, "mayank"]
+// let name: string;
+// let age: number;
+// let isstudent: boolean;
+// let hobbies: string[];
+// let role: [number, string];
+// role = [1, "mayank"]
 // type Person = {
 //   name: string;
 //   age: number;
@@ -16,11 +18,20 @@ role = [1, "mayank"]
 // }
 const App: React.FC = () => {
 
-
+  const [todo, setTodo] = useState<string>("")
+  const [todos, setTodos] = useState<Todos[]>([])
+  const handleadd = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (todo) {
+      setTodos([...todos, { id: Date.now(), todo, isDone: false }])
+      setTodo("")
+    }
+  }
   return (
     <>
       <div>
-        <Todo />
+        <Todo todo={todo} setTodo={setTodo}
+          todos={todos} setTodos={setTodos} handleadd={handleadd} />
       </div>
     </>
   )
