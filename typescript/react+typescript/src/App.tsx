@@ -1,6 +1,6 @@
-import { useState } from "react";
+
 import Todo from "./component/todo";
-import { Todos } from "./model";
+
 
 // let name: string;
 // let age: number;
@@ -18,20 +18,11 @@ import { Todos } from "./model";
 // }
 const App: React.FC = () => {
 
-  const [todo, setTodo] = useState<string>("")
-  const [todos, setTodos] = useState<Todos[]>([])
-  const handleadd = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (todo) {
-      setTodos([...todos, { id: Date.now(), todo, isDone: false }])
-      setTodo("")
-    }
-  }
+
   return (
     <>
       <div>
-        <Todo todo={todo} setTodo={setTodo}
-          todos={todos} setTodos={setTodos} handleadd={handleadd} />
+        <Todo />
       </div>
     </>
   )
